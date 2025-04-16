@@ -6,11 +6,24 @@
     <title>Document</title>
     <script type="text/javascript" src="../src/index.js"></script>
 </head>
-<body onload="onloadpage()">
-    <dl>
-        <dt>OUTPUT</dt>
-        <dd><input type="button" onclick="btnfun()" id="btn"></dd>
+<style>
+    #inputBox{
+        padding: 8px;
+        border-radius: 5px;
+    }
+    #btn{
+        padding: 8px;
+        width: 80px;
+        border-radius: 5px;
+    }
+    
+</style>
+<body align="center">
+    <h2>Search</h2>
+    <form action="result.html" method="get">
+        <input type="text" name="data" size="60" id="inputBox" placeholder="Enter any word for search..." required>
+        <button id="btn" onclick="btnfun()">Search</button>
         <p></p>
-    </dl>
+    </form>
 </body>
 </html>
